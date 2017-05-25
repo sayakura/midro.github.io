@@ -1,6 +1,5 @@
 <html>
   <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -9,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <style>
@@ -93,61 +93,66 @@
       &emsp; After lunch, we did an inventory check of all of our hardware and made note of what else we needed. At PhaseSpace, we met some people who could help provide any of the tools that were necessary. We spent the rest of the day discussing the pricing on a software development kit from Paradox that could potentially cut down our development time from a month down to a week. The team will be meeting them on Wednesday. We obtained calibration data and studied the data sheets from the sensors we might use in order to weigh the pros and cons of using each. We then met with James, one of the PhaseSpace employees with extensive technical experience. He gave us technical advice on how to move forward with the project.
       </p>
       <h3>Sensor Pros and Cons</h3>
-      <table>
+
+      <table class="table table-bordered">
+        <thead>
         <tr>
           <th>Sensor</th>
           <th>Pros</th>
           <th>Cons</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
-          <th>Force Sensitive Resistor (FSR) "Square"</th>
-          <th>
+          <td>Force Sensitive Resistor (FSR) "Square"</td>
+          <td>
             <ul>
             <li>Use voltage divider to control sensitivity and voltage swing</li>
             <li>Very light</li>
             <li>Low power</li>
             </ul>
-          </th>
-          <th>
+          </td>
+          <td>
           <ul>
             <li>Easily damaged</li>
             <li>Requires contact with trashbag</li>
           </ul>
-          </th>
+          </td>
         </tr>
         <tr>
-          <th>FSR "Strip"</th>
-          <th>
+          <td>FSR "Strip"</td>
+          <td>
           <ul>
             <li>Very long</li>
             <li>Use voltage divider to control sensitivity and voltage swing</li>
             <li>Very light</li>
             <li>Low power requirement</li>
-          </th>
-          <th>
+          </td>
+          <td>
           <ul>
               <li>Easily damaged</li>
               <li>Requires contact with trashbag</li>
           </ul>
-          </th>
+          </td>
         </tr>
         <tr>
-          <th>Ultrasonic Transmitter and Receiver"</th>
-          <th>
+          <td>Ultrasonic Transmitter and Receiver"</td>
+          <td>
           <ul>
             <li>No contact with trash</li>
             <li>Compact size</li>
           </ul>
-          </th>
-          <th>
+          </td>
+          <td>
           <ul>
             <li>Inaccurate</li>
             <li>Large voltage required</li>
             <li>Short range (around 1 ft)</li>
             <li>AC voltage required</li>
           </ul>
-          </th>
+          </td>
         </tr>
+        </tbody>
       </table>
 
       <h3>Technical Advice: Meeting with James</h3>
@@ -211,7 +216,7 @@
       &emsp; The team met with Paradox, Climatec, and San Leandro's IT Department at the city hall in order to discuss the implementation of the smart waste. We also learned a lot about the implementation of the new lights throughout the city and the nodes and gateways that they communicate with.
       </p>
       <p>
-      &emsp; During the meeting we received a detailed description on the implementation of the new smart lighting. The lights are connected together as nodes that dynamically mesh together for the best signals. These nodes will then connect to a gateway that connects to the gigabit fiber in the city. The gateways will also connect together. The system of these connecting nodes and gateways will be taken into account when trying to implement our smart waste devices with the city's 6LowPan.
+      &emsp; During the meeting we received a detailed description on the implementation of the new smart lighting. The lights are connected together as nodes that dynamically mesh together for the best signals. These nodes will then connect to a gateway that connects to the gigabit fiber in the city. The gateways will also connect together. The system of these connecting nodes and gateways will be taken into account when trying to implement our smart waste devices with the city's 6LoWPAN.
       </p>
       <h3>Next Steps: </h3>
         <ul class="modUl">

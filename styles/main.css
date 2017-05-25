@@ -1,7 +1,6 @@
 body {
   padding-top: 60px;
 }
-
 h1, h3 {
   text-align: center;
 }
@@ -20,4 +19,14 @@ img {
 }
 .col-md-8{
   padding-bottom: 40px;
+}
+.jumbotron{
+  margin-bottom: 5px;
+}
+.modUl{
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.cent{
+  text-align: center;
 }

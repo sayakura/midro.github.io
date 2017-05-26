@@ -23,6 +23,18 @@
         text-align: left;
         padding: 8px;
     }
+    blockquote {
+  background: #E3D3E4;
+  font-family: arial, sans-serif;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 100px;
+  padding: 0.5em 10px;
+  font-size: 14px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+    blockquote p {
+  display: inline;
+    } 
 
     /*tr:nth-child(even) {
         background-color: #dddddd;
@@ -228,6 +240,24 @@
 <!-- ......................................THURSDAY..................................... -->
 <!-- ................................................................................... -->
 <!-- ................................................................................... -->
+<h2>Thursday June 25, 2017</h2>
+      <p> &emsp; We looked deeper into our ultrasonic sensor design today. We documented the HC-SR04 ultrasonic sensor measurements for different heights of trash. In testing, we realized that the cone response of the ultrasonic sensor could touch the side walls of the trash can and read a false response. We also found that one or two sensors has much dead space that the sensor does not cover.
+      </p>
+      <p> &emsp; To optimize the location of sensors to cover the most area of the trash can we wrote up the following problem statement.
+      <p/>
+      <blockquote>
+        Parameters
+        <ul>
+          <li> Diameter and height of trash can</li>
+          <li>Use of 2 ultrasonic distance sensors (4 if necessary)</li>
+          <li>30 degree scanning range of each sensor (15 degree half angle, cone shaped)</li>
+          <li>Position of each sensor on trash can lid - avoiding 1 ft diameter hole in the center</li>
+          <li>Each sensor measures the surface that is the closest distance to it</li>
+        </ul>
+        <p>
+        We want to measure the fill level of trash in a trash can. Ultrasonic distance sensors are installed facing down into the trash can at a variable angle. The trash fill level is determined by the shortest distance the sensors read. The sensors have a +/-15 degree range and reach up to 4 meters. Our primary goal is to measure the fill level in the trash can as it fills up over time. To do this, we want to maximize the area the sensors cover without reading false distances from the walls of the trash can. 
+        </p>
+      </blockquote>
 
 
 <!-- ........................................FRIDAY..................................... -->

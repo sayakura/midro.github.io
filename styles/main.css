@@ -30,6 +30,10 @@ img {
 .cent{
   text-align: center;
 }
+#swag{
+   width: 30%;
+   height: 50%; 
+}
 th:nth-child(1){
 	background-color: #D1E8D0;
 }

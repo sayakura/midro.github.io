@@ -32,13 +32,12 @@ img {
 }
 #swag{
    width: 30%;
-   height: 50%; 
 }
 th:nth-child(1){
 	background-color: #D1E8D0;
 }
 th:nth-child(2){
-	background-color: #5C9ED5; 
+	background-color: #5C9ED5;
 }
 th:nth-child(3){
 	background-color: #FEDD53;
@@ -57,4 +56,4 @@ blockquote {
 }
 blockquote p {
   display: inline;
-} 
+}

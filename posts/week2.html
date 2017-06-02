@@ -103,8 +103,8 @@
         <!-- ......................................WEDNESDAY..................................... -->
         <!-- ................................................................................... -->
         <!-- ................................................................................... -->
-        <h2>Wednesday June 1, 2017</h2>
-        <ul>
+        <h2>Wednesday May 31, 2017</h2>
+        <ul class="modUl">
           <li>
             Had a meeting with Paradox engineers, and a new board was suggested
             instead of the PE.Stone development kit. More information to follow.
@@ -131,9 +131,9 @@
         <!-- ......................................THURSDAY..................................... -->
         <!-- ................................................................................... -->
         <!-- ................................................................................... -->
-        <h2>Thursday June 2, 2017</h2>
+        <h2>Thursday June 1, 2017</h2>
 
-        <ul>
+        <ul class="modUl">
           <li>Today, the team learned to use KiCAD to design custom PCBs. We figured out how to design custom parts as well as assign the circuitry to each of these. This will help us out with designing our own microprocessor that will be unique to our circuit.
           </li>
           <li>The software side of the team managed to set up a server in order to deisplay the fill levels of the trash can. The next step would be to set up the authentication for access to the server.
@@ -143,15 +143,57 @@
           </li>
         </ul>
 
-        <img src="../images/squad.JPG">
+        <img src="../images/squad.jpg">
 
         <!-- ........................................FRIDAY..................................... -->
         <!-- ................................................................................... -->
         <!-- ................................................................................... -->
-        <h2>Friday June 3, 2017</h2>
+        <h2>Friday June 2, 2017</h2>
 
+        <p> &emsp; Today we had a meeting with OSIsoft to discuss the use of their software with our data analysis and display. The meeting was very helpful because it gave us insight into how our data may be analyzed, and how it will interface with the information from the 6LoWPAN network and its data server.
+        </p>
+
+        <p> &emsp; During our meeting with OSIsoft, we received a couple good points of advice:
+        </p>
+        <ul class="modUl">
+          <li> Consider recording data on what nodes our data packets are carried through to look
+          at signal strenghts and network health. </li>
+          <li> When sampling data, make sure to have the sample rate, and data transfer rates as seperate entities so that we can have flexibility later. </li>
+          <li> Might have to convert data file from UFL to REST. </li>
+          <li> We should use PI Vision, which also has mobile support for interfaces and can be used
+          as graphics for our data display. </li>
+        </ul>
+
+        <p> &emsp; The general layout of our system is as follows:
+        </p>
+        <img src="../images/sensorSystemDia.png">
+
+		<p> &emsp; On the software side, we are working on connecting to the Asset Server and 
+		sending data over the server.</p>
+
+		<p> &emsp; We also have a very rough, general, prototype for the enclosure of our circuit board, batteries, and
+		other electronics. </p>       
+
+        <img src="../images/prePreEnclosure.jpg">
+
+   		<p> &emsp; We met with a Harvey Mudd College professor today, and he helped us confirm the use of a waterproof ultrasonic distance sensor. Once we decided on the sensor, we began testing the sensor with different input signals to get a better understanding of how it transmits 
+   		and receives signals. </p>
+
+   		<p> &emsp; Some testing was done for the HC-SR04 to see what the output of the transmitters
+   		looks like when a 3V input is given. </p>
+   		<img src="../images/HCRS04Test1.jpg">
+   		<img src="../images/HCRS04Test2.jpg">
+
+		     
       </div>
       <div class="col-md-2"></div>
     </div>
   </body>
   </html>
+
+
+
+
+
+
+

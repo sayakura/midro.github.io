@@ -72,19 +72,19 @@
 
         <h2>Monday June 5, 2017</h2>
         <p>
-        In researching different sensor options, today we analyzed the reverse car sensor with a jsn-sr04t pcb. This seems to be a good option because it is already weather resistant and the pcb allows us to measure the distance accurately. In testing, we found that sensor has a minimum detection distance at 19cm but we concluded that the trash can would be considered full at this level anyway. We also worked on running all three sensors in a trash can with one pcb to save space and resources. 
+        &emsp;In researching different sensor options, today we analyzed the reverse car sensor with a jsn-sr04t pcb. This seems to be a good option because it is already weather resistant and the pcb allows us to measure the distance accurately. In testing, we found that sensor has a minimum detection distance at 19cm but we concluded that the trash can would be considered full at this level anyway. We also worked on running all three sensors in a trash can with one pcb to save space and resources. 
         </p>
         <p>
-        Although the pins of the pcb is Vcc, Trig, Echo, and GND (the same as the HC-SR04 studied earlier), there is only one transceiver transducer used as the ultrasonic transmitter AND receiver. Two wires connect the transceiver to the pcb. We used an oscilloscope to observe the wire signals and observed one wire sends 8 pulses of a 40kHz square wave while the other wire goes HIGH when the pulses begin and LOW when the pulses echo back. Since both wires are important and the pulse wave is high voltage (-65V to 45V), we researched relay switches to turn the sensors on, one at a time.
+        &emsp;Although the pins of the pcb is Vcc, Trig, Echo, and GND (the same as the HC-SR04 studied earlier), there is only one transceiver transducer used as the ultrasonic transmitter AND receiver. Two wires connect the transceiver to the pcb. We used an oscilloscope to observe the wire signals and observed one wire sends 8 pulses of a 40kHz square wave while the other wire goes HIGH when the pulses begin and LOW when the pulses echo back. Since both wires are important and the pulse wave is high voltage (-65V to 45V), we researched relay switches to turn the sensors on, one at a time.
         </p>
         <img src="../images/reverseCarTest1.jpg">
         <p> 
-        Additionally, CAD drawings were made to visualize what the housings would look like.
+        &emsp;Additionally, CAD drawings were made to visualize what the housings would look like.
         </p>
         <img src="../images/sensorBox1.png">
         <img src="../images/sensorBox2.png">
         <p>
-        On the software side, we created a model template for displaying the trash can data. We struggled with the PUSH and POST for the server.
+        &emsp;On the software side, we created a model template for displaying the trash can data. We struggled with the PUSH and POST for the server.
         </p>
 
 

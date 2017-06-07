@@ -74,10 +74,14 @@
         <p>
         &emsp;In researching different sensor options, today we analyzed the reverse car sensor with a jsn-sr04t pcb. This seems to be a good option because it is already weather resistant and the pcb allows us to measure the distance accurately. In testing, we found that sensor has a minimum detection distance at 19cm but we concluded that the trash can would be considered full at this level anyway. We also worked on running all three sensors in a trash can with one pcb to save space and resources. 
         </p>
+
         <p>
         &emsp;Although the pins of the pcb is Vcc, Trig, Echo, and GND (the same as the HC-SR04 studied earlier), there is only one transceiver transducer used as the ultrasonic transmitter AND receiver. Two wires connect the transceiver to the pcb. We used an oscilloscope to observe the wire signals and observed one wire sends 8 pulses of a 40kHz square wave while the other wire goes HIGH when the pulses begin and LOW when the pulses echo back. Since both wires are important and the pulse wave is high voltage (-65V to 45V), we researched relay switches to turn the sensors on, one at a time.
         </p>
+   
+        <br>
         <img src="../images/reverseCarTest1.jpg">
+        <br>
         <p> 
         &emsp;Additionally, CAD drawings were made to visualize what the housings would look like.
         </p>
@@ -92,7 +96,26 @@
         <!-- ................................................................................... -->
         <!-- ................................................................................... -->
 
-      
+        <h2>Tuesday June 6, 2017</h2>
+        <p>
+        &emsp; We did more research on different wire housings today. Conduits seem to be the most promising option as they provide enough flexibility and are waterproof. Also, more CAD design was done on the enclosure in order to 3D print it in the future.
+        </p>
+
+        <img src="../images/carSensorTest.jpg">
+        <br>
+
+        <p>
+        &emsp; Further testing with the reverse car sensors gave us more insight on what the wires within each sensor do. We noted that the green channel has a corner turn-down (where the green line intersects the vertical orange line in the image above) at the point in time at which the pulse returns to the sensor.
+        </p>
+
+        <p>
+        &emsp; We also received several relays to play with! We hooked up a 5V DPDT relay to an oscilloscope (outputting a sin wave), connected a protection diode in parallel with the inductor within the relay, and observed its behavior. Although the relay was specified to be 5V, when the relay was supplied with ~3V we could hear and see on the oscilloscope that the switch within the relay had closed. When we decreased the voltage supplied to the relay, the switch opened at ~1V. We also began to think about how we can use relays to turn each of our three sensors (per trash can) on and off, and what the most optimal setup would be. 
+        </p>
+
+        <p>
+        &emsp; The software team finished up server configuration. They obtained the ability to archive data while also being able to write access to the server. 
+        </p>
+
 
         <!-- ......................................WEDNESDAY..................................... -->
         <!-- ................................................................................... -->

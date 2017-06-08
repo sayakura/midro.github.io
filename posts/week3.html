@@ -109,7 +109,7 @@
         </p>
 
         <p>
-        &emsp; We also received several relays to play with! We hooked up a 5V DPDT relay to an oscilloscope (outputting a sin wave), connected a protection diode in parallel with the inductor within the relay, and observed its behavior. Although the relay was specified to be 5V, when the relay was supplied with ~3V we could hear and see on the oscilloscope that the switch within the relay had closed. When we decreased the voltage supplied to the relay, the switch opened at ~1V. We also began to think about how we can use relays to turn each of our three sensors (per trash can) on and off, and what the most optimal setup would be. 
+        &emsp; We also received several relays to play with! We hooked up a 5VD PDT relay to an oscilloscope (outputting a sin wave), connected a protection diode in parallel with the inductor within the relay, and observed its behavior. Although the relay was specified to be 5V, when the relay was supplied with ~3V we could hear and see on the oscilloscope that the switch within the relay had closed. When we decreased the voltage supplied to the relay, the switch opened at ~1V. We also began to think about how we can use relays to turn each of our three sensors (per trash can) on and off, and what the most optimal setup would be. 
         </p>
 
         <p>
@@ -120,6 +120,36 @@
         <!-- ......................................WEDNESDAY..................................... -->
         <!-- ................................................................................... -->
         <!-- ................................................................................... -->
+
+
+
+        <h2>Wednesday June 7, 2017</h2>
+
+        <p>
+        On the software side, several scripts were created to delete and create PI points and elements using the PI Web API. The software engineers got more familiar with the REST API and are debugging small problems with the visualization software. We are now able to create the 40 trash can elements in the PI server and update them accordingly. We were succesful in creating and deleting test points. We have a sample of one detailed trashcan created as shown below using PI Vision. We also have a less detailed version that will show the fills of all 40 trash cans. The visualization tools may not be up to par for our needs, so we will design our in-house custom solutions.
+        </p>
+        <img src ="../images/visionDetailed.png">
+        <br>  
+        
+        <p>
+        On the engineering side, we received the housing for the sensors from McMaster-Carr, which we drilled custom holes using a CNC machine at the PhaseSpace Cave. The engineers also searched fro different tubing methods for wiring the sensors. We also have CAD drawings for the drilled parts within specifications for the small enclosure. 
+        </p>
+        <img src ="../images/smallEnclosure.png">
+        <br>
+        <p>
+        Today, we also measured the range of the car distance sensors. We found that they have a 20 degree half angle, which has a wider sweep than the HC204 (~15 degree half angle). This may be problematic because the sensor detects the edge of the trash cans. To fix this problem, we can angle the sensors, so it does not detect the walls.
+        </p>
+
+        <p>
+        We are still waiting for a solid trash can model and a module for the network connection. This is limiting our engineering time.
+        </p>
+
+        <p>
+        We also have a team logo for Midro now courtesy of Sati's epic design skills~
+        </p>
+
+        <img src ="../images/midro_logo.png">
+
         
         <!-- ......................................THURSDAY..................................... -->
         <!-- ................................................................................... -->

@@ -1,0 +1,186 @@
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    /*tr:nth-child(even) {
+        background-color: #dddddd;
+      }*/
+    </style>
+
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MiDro</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Weeks <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../posts/week1.html">Week 1</a></li>
+                <li><a href="../posts/week2.html">Week 2</a></li>
+                <li><a href="#">Week 3</a></li>
+                <!--add the new weeks here -->
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <div>
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+
+        <!-- ........................................WEEK..................................... -->
+        <h1> Week 3</h1>
+
+        <!-- ........................................MONDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+
+        <h2>Monday June 5, 2017</h2>
+        <p>
+        &emsp;In researching different sensor options, today we analyzed the reverse car sensor with a jsn-sr04t pcb. This seems to be a good option because it is already weather resistant and the pcb allows us to measure the distance accurately. In testing, we found that sensor has a minimum detection distance at 19cm but we concluded that the trash can would be considered full at this level anyway. We also worked on running all three sensors in a trash can with one pcb to save space and resources.
+        </p>
+
+        <p>
+        &emsp;Although the pins of the pcb is Vcc, Trig, Echo, and GND (the same as the HC-SR04 studied earlier), there is only one transceiver transducer used as the ultrasonic transmitter AND receiver. Two wires connect the transceiver to the pcb. We used an oscilloscope to observe the wire signals and observed one wire sends 8 pulses of a 40kHz square wave while the other wire goes HIGH when the pulses begin and LOW when the pulses echo back. Since both wires are important and the pulse wave is high voltage (-65V to 45V), we researched relay switches to turn the sensors on, one at a time.
+        </p>
+
+        <br>
+        <img src="../images/reverseCarTest1.jpg">
+        <br>
+        <p>
+        &emsp;Additionally, CAD drawings were made to visualize what the housings would look like.
+        </p>
+        <img src="../images/sensorBox1.png">
+        <img src="../images/sensorBox2.png">
+        <p>
+        &emsp;On the software side, we created a model template for displaying the trash can data. We struggled with the PUSH and POST for the server.
+        </p>
+
+
+        <!-- .......................................TUESDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+
+        <h2>Tuesday June 6, 2017</h2>
+        <p>
+        &emsp; We did more research on different wire housings today. Conduits seem to be the most promising option as they provide enough flexibility and are waterproof. Also, more CAD design was done on the enclosure in order to 3D print it in the future.
+        </p>
+
+        <img src="../images/carSensorTest.jpg">
+        <br>
+
+        <p>
+        &emsp; Further testing with the reverse car sensors gave us more insight on what the wires within each sensor do. We noted that the green channel has a corner turn-down (where the green line intersects the vertical orange line in the image above) at the point in time at which the pulse returns to the sensor.
+        </p>
+
+        <p>
+        &emsp; We also received several relays to play with! We hooked up a 5VD PDT relay to an oscilloscope (outputting a sin wave), connected a protection diode in parallel with the inductor within the relay, and observed its behavior. Although the relay was specified to be 5V, when the relay was supplied with ~3V we could hear and see on the oscilloscope that the switch within the relay had closed. When we decreased the voltage supplied to the relay, the switch opened at ~1V. We also began to think about how we can use relays to turn each of our three sensors (per trash can) on and off, and what the most optimal setup would be.
+        </p>
+
+        <p>
+        &emsp; The software team finished up server configuration. They obtained the ability to archive data while also being able to write access to the server.
+        </p>
+
+
+        <!-- ......................................WEDNESDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+
+
+
+        <h2>Wednesday June 7, 2017</h2>
+
+        <p>
+        On the software side, several scripts were created to delete and create PI points and elements using the PI Web API. The software engineers got more familiar with the REST API and are debugging small problems with the visualization software. We are now able to create the 40 trash can elements in the PI server and update them accordingly. We were succesful in creating and deleting test points. We have a sample of one detailed trashcan created as shown below using PI Vision. We also have a less detailed version that will show the fills of all 40 trash cans. The visualization tools may not be up to par for our needs, so we will design our in-house custom solutions.
+        </p>
+        <img src ="../images/visionDetailed.png">
+        <br>
+
+        <p>
+        On the engineering side, we received the housing for the sensors from McMaster-Carr, which we drilled custom holes using a CNC machine at the PhaseSpace Cave. The engineers also searched fro different tubing methods for wiring the sensors. We also have CAD drawings for the drilled parts within specifications for the small enclosure.
+        </p>
+        <img src ="../images/smallEnclosure.png">
+        <br>
+        <p>
+        Today, we also measured the range of the car distance sensors. We found that they have a 20 degree half angle, which has a wider sweep than the HC204 (~15 degree half angle). This may be problematic because the sensor detects the edge of the trash cans. To fix this problem, we can angle the sensors, so it does not detect the walls.
+        </p>
+
+        <p>
+        We are still waiting for a solid trash can model and a module for the network connection. This is limiting our engineering time.
+        </p>
+
+        <p>
+        We also have a team logo for Midro now courtesy of Sati's epic design skills~
+        </p>
+
+        <img src ="../images/midro_logo.png">
+
+
+        <!-- ......................................THURSDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+
+        <h2>Thursday June 8, 2017</h2>
+
+        <img src="../images/trashvis.png" />
+        <p>
+          The software has been progressing nicely. Currently, all parts of the
+          PI software that is being used has been completed. A python script
+          can create trashcans and PI points, and then update attributes of the
+          trashcans with provided data. The data is randomly generated now, so
+          the team will have to tie this in when it becomes available. Above,
+          you can see one of the attempts to visualize the data. This will allow
+          anyone who works on or wants to see the trashcan data to not have to
+          look at unappealing tables. The aforementioned picture was created using
+          OSISoft's PI Vision, which already interfaces with the PI AF Server
+          that we set up earlier. PI Vision is an easy start up solution as it
+          automatically updates data from the server and allows the user to switch
+          and create different vies easily. We, however, want more
+          customization and to offer various ways of displaying data, and will
+          therefore explore different approaches.
+        </p>
+        <!-- ........................................FRIDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+
+
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </body>
+  </html>

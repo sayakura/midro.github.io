@@ -1,0 +1,200 @@
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+
+    /*tr:nth-child(even) {
+        background-color: #dddddd;
+      }*/
+    </style>
+
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MiDro</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Weeks <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../posts/week1.html">Week 1</a></li>
+                <li><a href="#">Week 2</a></li>
+                <li><a href="../posts/week3.html">Week 3</a></li>
+                <!--add the new weeks here -->
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <div>
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+
+        <!-- ........................................WEEK..................................... -->
+        <h1> Week 2</h1>
+
+        <!-- ........................................MONDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+
+        <h2>Monday May 29, 2017</h2>
+        <p>
+        Memorial Day Holiday, no work!
+        </p>
+        <!-- .......................................TUESDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+
+        <h2>Tuesday May 30, 2017</h2>
+
+        <p>
+        Back on track! Today is a work day.
+        </p>
+
+        <p>
+        On the software side, we spent the day finding the parameters to use OSISoft for our project. We set up a Pi Server to play with Pi Vision. We ran into some troubles, so we are moving on to using ProcessBook for now to display the data that we obtain. We need to understand a little bit more about how to load data into a Pi Server to fully utilize OSISoft's software.
+        </p>
+        <p>
+        On the mathematical side, we tested and verified some equations to obtain maximum range of the sensors using MATLAB. The team agreed on using 3 sensors. It seems that using 3 sensors is the most optimal configuration for a balance of accuracy and cost. Using the circles below, we find that 3 heights can help us create a plane to determine how full the trash can is. During the day, we find that if we run into "out of range" values, which we will assume is an error.
+        </p>
+        <img src="../images/volume.jpg">
+
+        <p>
+        On the engineering side, we made a cardboard cone to verify the purported 15 degree range from the data sheets. Tolerance and sweep testing were done to verify how stable the sensors are to see how the housing would be made. Here is our masterpiece below!
+        </p>
+        <img id="swag" src="../images/cone.jpg">
+
+
+        <!-- ......................................WEDNESDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+        <h2>Wednesday May 31, 2017</h2>
+        <ul class="modUl">
+          <li>
+            Had a meeting with Paradox engineers, and a new board was suggested
+            instead of the PE.Stone development kit. More information to follow.
+          </li>
+          <li>
+            Created a server running Windows Server 2012 on an old laptop. This
+            is nice as Windows Server has a 180 day evaluation period (meaning free),
+            and will suffice until other means can be worked out. In general,
+            any server would be fine, but Windows Server is a requirement for
+            some of the software that we will work with over the summer.
+          </li>
+          <li>
+            Revisiting of the sensor problem. This is be a reoccurring thing, as
+            it is an important thing. The team is currently working on shielding
+            and waterproofing methods. Inspiration has come in the form of a repurposed
+            car parking sensor. It was known to be waterproof and cheap, so
+            the benefits of reverse engineering are endless. Silicone surrounds
+            the sensor in an attempt for this waterproofing and to allow the speaker
+            to actually vibrate in the casing. In all attempts to waterproof our
+            sensors, the signal that the trigger fired was either too weak or
+            the casing was not waterproof.
+          </li>
+        </ul>
+        <!-- ......................................THURSDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+        <h2>Thursday June 1, 2017</h2>
+
+        <ul class="modUl">
+          <li>Today, the team learned to use KiCAD to design custom PCBs. We figured out how to design custom parts as well as assign the circuitry to each of these. This will help us out with designing our own microprocessor that will be unique to our circuit.
+          </li>
+          <li>The software side of the team managed to set up a server in order to deisplay the fill levels of the trash can. The next step would be to set up the authentication for access to the server.
+          </li>
+          <li>
+          The engineering side made progress on the housing of the unit. There will be a lot of waterproofing to be done, but our main problem would be the manufacturing. We are not sure whether plastic or metals would be better for this step. We are making a small number of units, so we cannot invest in something such as injection molding. We will begin by designing the housing using CAD software, then 3D printing the model for further study. We are also ordering some stock parts/enclosures that might offer insight into designing the housing.
+          </li>
+        </ul>
+
+        <img src="../images/squad.jpg">
+
+        <!-- ........................................FRIDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+        <h2>Friday June 2, 2017</h2>
+
+        <p> &emsp; Today we had a meeting with OSIsoft to discuss the use of their software with our data analysis and display. The meeting was very helpful because it gave us insight into how our data may be analyzed, and how it will interface with the information from the 6LoWPAN network and its data server.
+        </p>
+
+        <p> &emsp; During our meeting with OSIsoft, we received a couple good points of advice:
+        </p>
+        <ul class="modUl">
+          <li> Consider recording data on what nodes our data packets are carried through to look
+          at signal strenghts and network health. </li>
+          <li> When sampling data, make sure to have the sample rate, and data transfer rates as seperate entities so that we can have flexibility later. </li>
+          <li> Might have to convert data file from UFL to REST. </li>
+          <li> We should use PI Vision, which also has mobile support for interfaces and can be used
+          as graphics for our data display. </li>
+        </ul>
+
+        <p> &emsp; The general layout of our system is as follows:
+        </p>
+        <img src="../images/sensorSystemDia.png">
+
+		<p> &emsp; On the software side, we are working on connecting to the Asset Server and 
+		sending data over the server.</p>
+
+		<p> &emsp; We also have a very rough, general, prototype for the enclosure of our circuit board, batteries, and
+		other electronics. </p>       
+
+        <img src="../images/prePreEnclosure.jpg">
+
+   		<p> &emsp; We met with a Harvey Mudd College professor today, and he helped us confirm the use of a waterproof ultrasonic distance sensor. Once we decided on the sensor, we began testing the sensor with different input signals to get a better understanding of how it transmits 
+   		and receives signals. </p>
+
+   		<p> &emsp; Some testing was done for the HC-SR04 to see what the output of the transmitters
+   		looks like when a 3V input is given. </p>
+   		<img src="../images/HCRS04Test1.jpg">
+   		<img src="../images/HCRS04Test2.jpg">
+
+		     
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </body>
+  </html>
+
+
+
+
+
+
+

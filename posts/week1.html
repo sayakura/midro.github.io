@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Midro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+     <link rel="stylesheet" href="../css/animate.css">
+     
+     <link rel="stylesheet" href="../css/main.css">
+    <!-- Temporary navbar container fix -->
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+     
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <img class="navbar-brand" src="/pictures/midro_logo_tiny.png">
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                     
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div >
+                <h1 class="mt-5 animated bounceInLeft" align="center">Week1</h1>
+                <hr>
+
+<!-- ........................................MONDAY..................................... -->
+<!-- ................................................................................... -->
+<!-- ................................................................................... -->
+
+      <h2>Monday May 22, 2017</h2>
+      <p>
+      &emsp; In the morning, we met Dominic LiMandri from the San Leandro Downtown Association. He works alongside the city to make public spaces more inviting to businesses and the community. Dom's main role in our project is to speed up any of the civil bureaucratic processes. Our meeting was very casual and the discussion ranged from weighing the impact of our project on the community to laughing about the activities to do in San Leandro. Our end goal for the meeting was to clarify the problem that we are tackling. We covered a lot of the logistics and technical aspects about the project, but we learned that there are many facets of the city's maintenance that can be improved. We were surprised to find out that there are only four maintenance workers, three on some days, for the entire downtown area. They sweep, collect, and pressure wash the dirt and trash on the streets and sidewalks every day. Especially because additional trash cans will be introduced to the downtown area, our project's intention is to reduce much of the labor required for maintenance. By implementing sensors, workers will only need to expend their energy on trash cans that actually need to be serviced, instead of checking all exisitng  cans. 
+
+      <h3>Logistics: Meeting with Dominic</h3>
+      <ul class="modUl">
+        <li>Start off with 10 units, then add more (about 40 total) if budget permits</li>
+        <li>$500 max per unit, but aim for less</li>
+        <li>Trash cans bolted into ground</li>
+        <li>Stainless steel outer body, separate plastic can inside</li>
+        <li>Contract with ACI: they buy the trash cans for us</li>
+        <li>Should be as easy to replace as previous trashcans</li>
+        <li>Able to withstand daily beating of a regular trashcan</li>
+        <li>Ideally, battery lasts over a month and should be easy maintenance</li>
+        <li>Securely fixed to trash can to avoid robberies</li>
+      </ul>
+      <br>
+      <p>
+      &emsp; After lunch, we did an inventory check of all of our hardware and made note of what else we needed. At PhaseSpace, we met some people who could help provide any of the tools that were necessary. We spent the rest of the day discussing the pricing on a software development kit from Paradox that could potentially cut down our development time from a month down to a week. The team will be meeting them on Wednesday. We obtained calibration data and studied the data sheets from the sensors we might use in order to weigh the pros and cons of using each. We then met with James, one of the PhaseSpace employees with extensive technical experience. He gave us technical advice on how to move forward with the project.
+      </p>
+      <h3>Sensor Pros and Cons</h3>
+
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Sensor</th>
+          <th>Pros</th>
+          <th>Cons</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Force Sensitive Resistor (FSR) "Square"</td>
+          <td>
+            <ul>
+            <li>Use voltage divider to control sensitivity and voltage swing</li>
+            <li>Very light</li>
+            <li>Low power</li>
+            </ul>
+          </td>
+          <td>
+          <ul>
+            <li>Easily damaged</li>
+            <li>Requires contact with trashbag</li>
+          </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>FSR "Strip"</td>
+          <td>
+          <ul>
+            <li>Very long</li>
+            <li>Use voltage divider to control sensitivity and voltage swing</li>
+            <li>Very light</li>
+            <li>Low power requirement</li>
+          </td>
+          <td>
+          <ul>
+              <li>Easily damaged</li>
+              <li>Requires contact with trashbag</li>
+          </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Ultrasonic Transmitter and Receiver"</td>
+          <td>
+          <ul>
+            <li>No contact with trash</li>
+            <li>Compact size</li>
+          </ul>
+          </td>
+          <td>
+          <ul>
+            <li>Inaccurate</li>
+            <li>Large voltage required</li>
+            <li>Short range (around 1 ft)</li>
+            <li>AC voltage required</li>
+          </ul>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      <h3>Technical Advice: Meeting with James</h3>
+      <ul class="modUl">
+        <li>4 weeks (propositioned) to roll out a fully functional prototype is short</li>
+        <li>Add a beep when the trash is changed</li>
+        <li>Choose integrated circuits over replcating them</li>
+        <li>Consider the size of the trash can</li>
+        <li>Debate between plastic or metal housing</li>
+        <li>Finalize the power supply ahead of time e.g. take price of battery into account</li>
+        <li>Manufacturing takes 3-4 weeks after final prototype is completed</li>
+      </ul>
+
+
+<!-- .......................................TUESDAY..................................... -->
+<!-- ................................................................................... -->
+<!-- ................................................................................... -->
+
+      <h2>Tuesday May 23, 2017</h2>
+      <p>
+      &emsp; We met Mayor Pauline Cutter and Council Member Pete Ballew and we discussed some projects that might be interesting if we complete the smart trash project following our tentative schedule.
+      </p>
+      <h3>The Next Projects: Meeting with the Mayor</h3>
+
+      <h5 class="modUl">Startups In Residence (STIR) Program</h5>
+      <ul class="modUl">
+        <li>Connects startups with government entities to solve problems</li>
+        <li>Cities involved are: San Francisco, Oakland, San Leandro, Sacramento</li>
+        <li>Bot that recommends activities for people who want to learn more about the city</li>
+      </ul>
+      <h5 class="modUl">We should look into the following 3 projects:</h5>
+      <ul class="modUl">
+        <li>How to connect people to San Leandro government<br>
+        &emsp; "More events" seems to be the only answer
+        </li>
+        <li>Lighting in San Leandro (we will probably do this next)</li>
+        <li>Improve Transportation
+          <ul>
+            <li>AC Transit is not meeting needs</li>
+            <li>Kaiser Shuttle</li>
+            <li>Bicycle/Pedestrian Program ties-in with transportation</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>
+      &emsp; We tested the ultrasonic sensors with the integrated circuits and they are fully functional, but we will need to develop a waterproofing system to make it more robust. We are thinking that multiple ultrasonic sensors for different sections of the trash can seems to be a viable solution. We looked into different types of ultrasonic sensors (e.g. distance sensors for cars) to look for the ideal sensor for our application.
+      </p>
+      <p>
+      &emsp; On the software side, we set up a layout for the different parts of our board and network. This includes creating classes for each of the components. We also discussed the importance of the Paradox SDK in our project as it could cut down a lot of the time we could spend refining other aspects. However, we are concerned at the cost of the SDK as it would swallow a huge amount of our budget.
+      </p>
+
+    <img class="week_img" src="../images/WasteSystemDiagram.png" />
+
+<!-- ......................................WEDNESDAY.................................... -->
+<!-- ................................................................................... -->
+<!-- ................................................................................... -->
+
+      <h2>Wednesday May 24, 2017</h2>
+      <p>
+      &emsp; The team met with Paradox, Climatec, and San Leandro's IT Department at the city hall in order to discuss the implementation of the smart waste. We also learned a lot about the implementation of the new lights throughout the city and the nodes and gateways that they communicate with.
+      </p>
+      <p>
+      &emsp; During the meeting we received a detailed description on the implementation of the new smart lighting. The lights are connected together as nodes that dynamically mesh together for the best signals. These nodes will then connect to a gateway that connects to the gigabit fiber in the city. The gateways will also connect together. The system of these connecting nodes and gateways will be taken into account when trying to implement our smart waste devices with the city's 6LoWPAN.
+      </p>
+      <h3>Next Steps: </h3>
+        <ul class="modUl">
+          <li>Decide on the degree of integration with Paradox's software that our devices will need.</li>
+          <li>Develop sensor prototype which can be quickly integrated with Paradox hardware once that is received.</li>
+          <li>Decide on testing for case study.</li>
+          <li>Keep in contact with Paradox regarding the use of their development kit.</li>
+          <li>Work on implementing OSI's PI Ssystem with data from our sensors.</li>
+          <li>Determine/Finalize the liscensing of our product.</li>
+      </ul>
+      <p>
+      &emsp; We also prepared for the launch party and now have a better sense of the connections between our partners.
+      </p>
+
+<!-- ......................................THURSDAY..................................... -->
+<!-- ................................................................................... -->
+<!-- ................................................................................... -->
+<h2>Thursday June 25, 2017</h2>
+      <p> &emsp; We looked deeper into our ultrasonic sensor design today. Experimentally, we documented the HC-SR04 ultrasonic sensor measurements for different heights of trash. In testing, we realized that the cone response of the ultrasonic sensor could touch the side walls of the trash can and read a false response. We also found that one or two sensors has much dead space that the sensor does not cover.
+      </p>
+      <p> &emsp; To optimize the location of sensors to cover the most area of the trash can we wrote up the following problem statement.
+      <p/>
+      <blockquote>
+        Parameters
+        <ul>
+          <li> Diameter and height of trash can</li>
+          <li>Use of 2 ultrasonic distance sensors (4 if necessary)</li>
+          <li>30 degree scanning range of each sensor (15 degree half angle, cone shaped)</li>
+          <li>Position of each sensor on trash can lid - avoiding 1 ft diameter hole in the center</li>
+          <li>Each sensor measures the surface that is the closest distance to it</li>
+        </ul>
+        <p>
+        We want to measure the fill level of trash in a trash can. Ultrasonic distance sensors are installed facing down into the trash can at a variable angle. The trash fill level is determined by the shortest distance the sensors read. The sensors have a +/-15 degree range and reach up to 4 meters. Our primary goal is to measure the fill level in the trash can as it fills up over time. To do this, we want to maximize the area the sensors cover without reading false distances from the walls of the trash can. 
+        </p>
+      </blockquote>
+      We made rough models for possible configurations of the sensors.
+      <img class="week_img" src="../images/Cones_angle1.png" />
+      <img class="week_img" src="../images/Cones_angle2.png" />
+
+
+<!-- ........................................FRIDAY..................................... -->
+<!-- ................................................................................... -->
+<!-- ................................................................................... -->
+<h2>Friday May 26, 2017</h2>
+      <p>
+      &emsp; As preliminary testing of the different sensors wrapped up, the team began to consider the pros and cons of attaching one sensor vs. two sensors on each trash can. 
+      </p>
+
+      <table>
+        <tbody>
+          <tr>
+              <th>Number of sensors</th>
+              <th>Pros</th>
+              <th>Cons</th>
+          </tr>
+          <tr>
+            <th>1 sensor</th>
+              <td><ul>
+              <li>Less battery usage</li>
+              <li>Easier circuit</li>
+              <li>Less processing required</li>
+              <li>Smaller unit</li>
+              <li>Cheaper</li>
+              </ul></td>
+              <td><ul>
+                <li>No way to cross-check</li>
+                <li>Less region of the trash can covered</li>
+              </ul>
+              </td>
+          </tr>
+          <tr>
+            <th>2 sensors</th>
+              <td><ul>
+                <li>More region of the trash can covered</li>
+                <li>Heightened IP value due to predictive software capabilities</li>
+                <li>Cross-checking possible</li>
+              </ul></td>
+              <td><ul>
+                <li>More battery usage</li>
+                <li>More complicated code</li>
+                <li>Multiple housing units needed</li>
+                <li>More math involved</li>
+                <li>Echoes</li>
+              </ul>
+              </td>
+          </tr>
+          <tr>
+            <th>3 sensors</th>
+              <td><ul>
+                <li>Can estimate a plane with three points</li>
+                <li>Heightens IP value</li>
+                <li>Easy Installation with sensors pointed down</li>
+              </ul></td>
+              <td><ul>
+                <li>Uses more power</li>
+                <li>Echoes</li>
+              </ul>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <p>
+      &emsp; From the pros and cons discussed, we plan to have one sensor per unit. Although having two sensors instead of one sensor heightens our capability to monitor a larger region of the can, there appear to be less cons involved if using one sensor. Since trash naturally accumulates towards the center, and our primary goal is to detect when the cans need to be emptied, one sensor is sufficient for our purposes. 
+      </p>
+            </div>
+        </div>
+      
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-4 bg-inverse">
+        <div class="container">
+            <p class="m-0 text-center text-white"> &copy; Kura Peng 2017</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/tether/tether.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

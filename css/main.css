@@ -1,0 +1,57 @@
+
+h1, h3 {
+  text-align: center;
+}
+p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: justify;
+}
+.week_img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-md-8{
+  padding-bottom: 40px;
+}
+.jumbotron{
+  margin-bottom: 5px;
+}
+.modUl{
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.cent{
+  text-align: center;
+}
+#swag{
+   width: 30%;
+}
+th:nth-child(1){
+	background-color: #D1E8D0;
+}
+th:nth-child(2){
+	background-color: #5C9ED5;
+}
+th:nth-child(3){
+	background-color: #FEDD53;
+}
+th:nth-child(4){
+	background-color: #EFB6C5;
+}
+blockquote {
+  background: #E8E8EE;
+  font-family: arial, sans-serif;
+  border-left: 10px solid #EFB6C5;
+  margin: 1.5em 100px;
+  padding: 0.5em 10px;
+  font-size: 14px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote p {
+  display: inline;
+}

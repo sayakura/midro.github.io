@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Midro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+     <link rel="stylesheet" href="../css/animate.css">
+     
+     <link rel="stylesheet" href="../css/main.css">
+    <!-- Temporary navbar container fix -->
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+     
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <img class="navbar-brand" src="/pictures/midro_logo_tiny.png">
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div >
+                <h1 class="mt-5 animated bounceInLeft" align="center">Week2</h1>
+                <hr>
+                
+                
+                
+                
+                
+                
+                
+                
+                <!-- ........................................MONDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+
+        <h2>Monday May 29, 2017</h2>
+        <p>
+        Memorial Day Holiday, no work!
+        </p>
+        <!-- .......................................TUESDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+
+        <h2>Tuesday May 30, 2017</h2>
+
+        <p>
+        Back on track! Today is a work day.
+        </p>
+
+        <p>
+        On the software side, we spent the day finding the parameters to use OSISoft for our project. We set up a Pi Server to play with Pi Vision. We ran into some troubles, so we are moving on to using ProcessBook for now to display the data that we obtain. We need to understand a little bit more about how to load data into a Pi Server to fully utilize OSISoft's software.
+        </p>
+        <p>
+        On the mathematical side, we tested and verified some equations to obtain maximum range of the sensors using MATLAB. The team agreed on using 3 sensors. It seems that using 3 sensors is the most optimal configuration for a balance of accuracy and cost. Using the circles below, we find that 3 heights can help us create a plane to determine how full the trash can is. During the day, we find that if we run into "out of range" values, which we will assume is an error.
+        </p>
+        <img class="week_img" src="../images/volume.jpg">
+
+        <p>
+        On the engineering side, we made a cardboard cone to verify the purported 15 degree range from the data sheets. Tolerance and sweep testing were done to verify how stable the sensors are to see how the housing would be made. Here is our masterpiece below!
+        </p>
+        <img class="week_img" id="swag" src="../images/cone.jpg">
+
+
+        <!-- ......................................WEDNESDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+        <h2>Wednesday May 31, 2017</h2>
+        <ul class="modUl">
+          <li>
+            Had a meeting with Paradox engineers, and a new board was suggested
+            instead of the PE.Stone development kit. More information to follow.
+          </li>
+          <li>
+            Created a server running Windows Server 2012 on an old laptop. This
+            is nice as Windows Server has a 180 day evaluation period (meaning free),
+            and will suffice until other means can be worked out. In general,
+            any server would be fine, but Windows Server is a requirement for
+            some of the software that we will work with over the summer.
+          </li>
+          <li>
+            Revisiting of the sensor problem. This is be a reoccurring thing, as
+            it is an important thing. The team is currently working on shielding
+            and waterproofing methods. Inspiration has come in the form of a repurposed
+            car parking sensor. It was known to be waterproof and cheap, so
+            the benefits of reverse engineering are endless. Silicone surrounds
+            the sensor in an attempt for this waterproofing and to allow the speaker
+            to actually vibrate in the casing. In all attempts to waterproof our
+            sensors, the signal that the trigger fired was either too weak or
+            the casing was not waterproof.
+          </li>
+        </ul>
+        <!-- ......................................THURSDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+        <h2>Thursday June 1, 2017</h2>
+
+        <ul class="modUl">
+          <li>Today, the team learned to use KiCAD to design custom PCBs. We figured out how to design custom parts as well as assign the circuitry to each of these. This will help us out with designing our own microprocessor that will be unique to our circuit.
+          </li>
+          <li>The software side of the team managed to set up a server in order to deisplay the fill levels of the trash can. The next step would be to set up the authentication for access to the server.
+          </li>
+          <li>
+          The engineering side made progress on the housing of the unit. There will be a lot of waterproofing to be done, but our main problem would be the manufacturing. We are not sure whether plastic or metals would be better for this step. We are making a small number of units, so we cannot invest in something such as injection molding. We will begin by designing the housing using CAD software, then 3D printing the model for further study. We are also ordering some stock parts/enclosures that might offer insight into designing the housing.
+          </li>
+        </ul>
+
+        <img class="week_img" src="../images/squad.jpg">
+
+        <!-- ........................................FRIDAY..................................... -->
+        <!-- ................................................................................... -->
+        <!-- ................................................................................... -->
+        <h2>Friday June 2, 2017</h2>
+
+        <p> &emsp; Today we had a meeting with OSIsoft to discuss the use of their software with our data analysis and display. The meeting was very helpful because it gave us insight into how our data may be analyzed, and how it will interface with the information from the 6LoWPAN network and its data server.
+        </p>
+
+        <p> &emsp; During our meeting with OSIsoft, we received a couple good points of advice:
+        </p>
+        <ul class="modUl">
+          <li> Consider recording data on what nodes our data packets are carried through to look
+          at signal strenghts and network health. </li>
+          <li> When sampling data, make sure to have the sample rate, and data transfer rates as seperate entities so that we can have flexibility later. </li>
+          <li> Might have to convert data file from UFL to REST. </li>
+          <li> We should use PI Vision, which also has mobile support for interfaces and can be used
+          as graphics for our data display. </li>
+        </ul>
+
+        <p> &emsp; The general layout of our system is as follows:
+        </p>
+        <img class="week_img" src="../images/sensorSystemDia.png">
+
+		<p> &emsp; On the software side, we are working on connecting to the Asset Server and 
+		sending data over the server.</p>
+
+		<p> &emsp; We also have a very rough, general, prototype for the enclosure of our circuit board, batteries, and
+		other electronics. </p>       
+
+        <img  class="week_img" src="../images/prePreEnclosure.jpg">
+
+   		<p> &emsp; We met with a Harvey Mudd College professor today, and he helped us confirm the use of a waterproof ultrasonic distance sensor. Once we decided on the sensor, we began testing the sensor with different input signals to get a better understanding of how it transmits 
+   		and receives signals. </p>
+
+   		<p> &emsp; Some testing was done for the HC-SR04 to see what the output of the transmitters
+   		looks like when a 3V input is given. </p>
+   		<img class="week_img" src="../images/HCRS04Test1.jpg">
+   		<img class="week_img" src="../images/HCRS04Test2.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+      
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-4 bg-inverse">
+        <div class="container">
+            <p class="m-0 text-center text-white"> &copy; Kura Peng 2017</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/tether/tether.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
